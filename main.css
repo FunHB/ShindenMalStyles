@@ -155,7 +155,7 @@ nav[role=navigation] {
 }
 
 .watched_status::before {
-    content: url("https://i.imgur.com/X1HTu3D.png");
+    content: url("https://cdn.myanimelist.net/s/common/uploaded_files/1455540405-b2e2bf20e11b68631e8439b44d9a51c7.png");
     display: block;
     width: 1024px;
     height: 280px;
