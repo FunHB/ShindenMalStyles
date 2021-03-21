@@ -1,0 +1,465 @@
+@media screen and (max-width: 1200px) {
+    .nav-search input[type=text], .nav-search button[type=submit] {
+        font-size: 10px !important;
+    }
+    nav[role=navigation] li a {
+        font-size: 12px !important;
+    }
+}
+
+/* General Styles */
+
+body {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: 11px;
+    color: #000 !important;
+}
+
+header, footer {
+    background-color: #2e51a2;
+}
+
+td {
+    line-height: 1.5em;
+}
+
+a {
+    color: #2e51a2 !important;
+    text-decoration: none;
+}
+
+footer {
+    padding: 15px 0;
+    font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+footer a {
+    font-size: 12px;
+    color: #fafafa !important;
+    padding-top: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.background {
+    width: 100%;
+    background-color: #fff !important;
+    background-image: url("https://cdn.myanimelist.net/s/common/uploaded_files/1455540188-934a8b8942494df1086f9402bbb5330b.png");
+    background-repeat: repeat-x;
+    background-size: initial !important;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav[role=navigation] ul li {
+    margin: 0 !important;
+}
+
+nav[role=navigation] li a {
+    padding: 15px 12px !important;
+    border-radius: 0 !important;
+    font-size: 18px;
+    color: #fff !important;
+}
+
+nav[role=navigation] li.active a {
+    background: initial !important;
+}
+
+nav[role=navigation] ul li a:hover {
+    background-color: rgb(134, 137, 134) !important;
+    color: rgb(18, 26, 38);
+}
+
+.nav-search {
+    margin: 10px !important;
+}
+
+.nav-search input[type=text], .nav-search button[type=submit] {
+    border-radius: 0 !important;
+    font-size: 16px;
+}
+
+.nav-search input[type=text]:focus, .nav-search button[type=submit]:focus {
+    outline: none !important;
+}
+
+nav[role=navigation] {
+    padding: 0;
+}
+
+/* List Container */
+
+#container {
+    background-color: #fff;
+    border: #EBEBEB 1px solid;
+    padding-top: 0 !important;
+    width: 1064px;
+}
+
+.container {
+    position: relative;
+    background-color: #ffffff;
+    border: #EBEBEB 1px solid !important;
+    width: 1058px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+/* List Container - Cover Block */
+
+.cover-block {
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cover-block .image-container {
+    display: table-cell;
+    padding-top: 16px;
+    width: 1024px;
+}
+
+.cover-block .image-container.hide {
+    display: none;
+}
+
+.cover-block .image-container img {
+    max-width: 1024px;
+}
+
+/* List Container - Status Menu */
+
+.watched_status {
+    width: 100%;
+    background-color: #FFF;
+    border: #EBEBEB 1px solid;
+    border-right: #EBEBEB 1px solid !important;
+    z-index: 1;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+}
+
+.watched_status::before {
+    content: url("https://i.imgur.com/X1HTu3D.png");
+    display: block;
+    width: 1024px;
+    height: 280px;
+    padding: 20px 20px 0 20px;
+}
+
+.watched_status ul {
+    width: 1024px !important;
+    height: 50px !important;
+    display: table;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 40px 0;
+}
+
+.watched_status ul li {
+    margin: 0 !important;
+    float: none !important;
+    position: relative;
+    display: table-cell;
+    padding: 0 !important;
+    vertical-align: middle !important;
+}
+
+.watched_status ul li .button {
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+    text-align: center !important;
+    font-size: 1.6em !important;
+    color: #9B9B9B !important;
+    background-color: inherit !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.watched_status ul li .button.active {
+    color: #787878 !important;
+    font-weight: bold;
+}
+
+.watched_status ul li .button:active {
+    position: static !important;
+}
+
+.watched_status ul li .button:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4065BA;
+    display: block;
+    width: 100%;
+    height: 4px;
+    content: '';
+    opacity: 0;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.watched_status ul li .button.active:after, .watched_status ul li .button:hover:after {
+    opacity: 1
+}
+
+/* List Container - List Block / list table */
+
+.list-content {
+    margin-top: 0;
+    min-height: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1024px;
+}
+
+.title-list {
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1024px;
+    border-collapse: collapse;
+    border: #EBEBEB 1px solid;
+}
+
+.floatThead-container {
+    z-index: initial !important;
+}
+
+.title-list tbody, .title-list tbody tr, .title-list tbody tr td {
+    position: relative;
+    z-index: 2 !important;
+    background: #fff;
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background-color: #fcfcfc;
+}
+
+/* List Container - List Status Title (with Stats) */
+
+.section-title-list {
+    position: relative;
+    display: table !important;
+    background-color: #4065BA;
+    width: 1024px;
+    height: 38px;
+}
+
+.section-title-list span {
+    display: table-cell !important;
+    width: 1024px;
+    padding: 5px;
+    font-size: 1.5em;
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+/* List Container - List Table - Header */
+
+.title-list .list-table-header th {
+    background: #F6F6F6 url("https://myanimelist.net/img/pc/ownlist/bar-table-header.png") no-repeat right 7px / 1px 22px;
+    display: table-cell;
+    border-bottom: #EBEBEB 1px solid;
+    height: 36px;
+    text-align: center;
+}
+
+.title-list .list-table-header th:last-child {
+    background-image: none;
+}
+
+.title-list .list-table-header td:first::before {
+    background-image: none;
+    width: 4px;
+}
+
+.title-list .list-table-header::before {
+    content: "";
+    background: #F6F6F6;
+    width: 7px;
+}
+
+.title-list .list-table-header th.col-lp {
+    min-width: 40px !important;
+}
+
+.title-list .list-table-header th.col-title {
+    width: 100%;
+    padding-left: 8px;
+    text-align: left;
+}
+
+.title-list .list-table-header th.col-rating {
+    min-width: 63px !important;
+}
+
+.title-list .list-table-header th.col-type {
+    min-width: 80px !important;
+}
+
+.title-list .list-table-header th.col-progress {
+    min-width: 65px !important;
+}
+
+.title-list .list-table-header th {
+    font-size: 15px;
+    color: #323232;
+    text-decoration: none
+}
+
+.title-list .list-table-header .tablesorter-header div {
+    position: relative;
+    display: inline-block;
+    color: #323232;
+    white-space: nowrap;
+    vertical-align: middle;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out
+}
+
+.title-list .list-table-header th div:hover {
+    color: #2556c6 !important;
+}
+
+.title-list .list-table-header .tablesorter-headerAsc div::after, .title-list .list-table-header .tablesorter-headerDesc div::after {
+    color: #1d439b !important;
+}
+
+/* List Container - List Table - Items */
+
+.title-list .title-row {
+    width: 100%;
+}
+
+.title-list .title-row td {
+    display: table-cell;
+    padding: 4px 0;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: #EBEBEB 1px solid;
+    height: 75px;
+}
+
+.title-list .title-row td:first-child {
+    border-top: #EBEBEB 1px solid;
+}
+
+.title-list .title-row td:last-child {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.title-list .title-row .title-col::before {
+    content: none;
+    display: block;
+    float: left;
+    width: 48px;
+    height: 68px;
+    border: #EBEBEB 1px solid
+}
+
+.media-img {
+    display: inline-block;
+    position: absolute !important;
+}
+
+.title-list .title-row .title-col {
+    padding-left: 8px;
+    text-align: left !important;
+    word-wrap: break-word !important;
+    vertical-align: middle !important;
+}
+
+.title-list .title-row .title-col a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.title-list .title-row .rate {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.title-list .title-row .title-col .delete-title, .title-list .title-row .title-col .title_edit_open {
+    float: right;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.title-list .title-row::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 83px;
+    float: left;
+    position: relative;
+    z-index: 2 !important;
+}
+
+.section-in-progress .title-row::before {
+    background-color: #2db039;
+}
+
+.section-plan .title-row::before {
+    background-color: #c3c3c3;
+}
+
+.section-skip .title-row::before {
+    background-color: #D2691E;
+}
+
+.section-completed .title-row::before {
+    background-color: #26448f;
+}
+
+.section-hold .title-row::before {
+    background-color: #f1c83e;
+}
+
+.section-dropped .title-row::before {
+    background-color: #a12f31;
+}
+
+.qtip {
+    display: none !important;
+}
